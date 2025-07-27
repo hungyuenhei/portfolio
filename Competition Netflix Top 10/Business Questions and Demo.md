@@ -1,6 +1,6 @@
 ### Problem 1 Statement
 
-Total watching hours to the top_10 shows on each category globally
+Demonstrate the total watching hours to the top_10 shows on each category globally.
 
 ### Schema Setup
 
@@ -23,7 +23,7 @@ ORDER BY watching_week;
 
 ### Problem 2 Statement
 
-In general, how Netflix content performed (by category) globally
+In general, how Netflix content performed (by category) globally?
 
 ### Schema Setup
 
@@ -43,7 +43,7 @@ ORDER BY max_weeks_in_top_10 DESC, avg_weekly_rank ASC;
 
 ### Problem 3 Statement
 
-Top 10 total viewed hours shows on Netflix globally from 2021-2024
+What are the total viewed hours of the Top 10 shows on Netflix globally from 2021-2024?
 
 ### Schema Setup
 
@@ -58,7 +58,7 @@ LIMIT 10;
 ```
 ### Problem 4 Statement
 
-Top 10 Most Popular Shows on Netflix of All Time
+Which 10 Shows are most popular on Netflix of All Time?
 
 ### Schema Setup
 
@@ -100,7 +100,7 @@ ORDER BY show_title, season_title;
 
 ### Problem 6 Statement
 
-How do the cumulative weeks in the top 10 correlate with the total hours viewed in the first 28 days for the most popular shows
+How do the cumulative weeks in the top 10 correlate with the total hours viewed in the first 28 days for the most popular shows?
 
 ### Schema Setup
 
