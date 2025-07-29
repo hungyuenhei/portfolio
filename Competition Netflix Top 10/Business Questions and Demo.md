@@ -25,7 +25,7 @@ GROUP BY quarter, category
 ORDER BY quarter;
 ```
 
-<img width="1137" height="605" alt="Image" src="https://github.com/user-attachments/assets/79b781ed-9858-4ae1-803f-3ba2b1a2ffaa" />
+<img width="1142" height="608" alt="Image" src="https://github.com/user-attachments/assets/971d832f-a2d1-441f-8fd3-ca86cfbbc942" />
 
 # Problem 2 Statement
 
