@@ -53,6 +53,8 @@ LIMIT 10;
 
 Among the Category, English TV shows is always the top preference among the netflix audience and the viewed hours is doubled compared with English Film. The practical and creative factors on launching the English TV shows in series over the media industry over decades allows to extend storytelling and audiences connections that encourage certain amount of fans to return and watch the shows.
 
+Non-English show is not the dominance in global TV & Movie industry because of the language barrier and well-established network in the English market, watching hours is lowered than the English shows in general. However in 2021Q4, Top 10 ranked non-English TV shows transcend 4 billions total watching hours. One of the reasons behind could be the rapid industry development of Korean and Japanese Drama and Animations with high production quality. Parallelly, culture of these two countries influences and stimulates people's curiosity and loyalty to the content.
+
 <img width="942" height="631" alt="Image" src="https://github.com/user-attachments/assets/6289d612-4f4a-4f76-8507-8bc94bf46322" />
 
 <img width="980" height="631" alt="Image" src="https://github.com/user-attachments/assets/68fb5b05-4229-46fc-b1ad-8fcbfa2a3663" />
