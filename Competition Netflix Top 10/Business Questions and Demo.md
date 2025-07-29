@@ -2,7 +2,7 @@
 
 Demonstrate the total watching hours to the top_10 shows on each category globally.
 
-## Schema Setup
+### Schema Setup
 
 ```sql
 WITH cte AS (
@@ -25,7 +25,7 @@ ORDER BY watching_week;
 
 In general, how Netflix content performed (by category) globally?
 
-## Schema Setup
+### Schema Setup
 
 ```sql
 SELECT 
@@ -45,7 +45,7 @@ ORDER BY max_weeks_in_top_10 DESC, avg_weekly_rank ASC;
 
 What are the total viewed hours of the Top 10 shows on Netflix globally from 2021-2024?
 
-## Schema Setup
+### Schema Setup
 
 ```sql
 SELECT
@@ -60,7 +60,7 @@ LIMIT 10;
 
 Which 10 Shows are most popular on Netflix of All Time?
 
-## Schema Setup
+### Schema Setup
 
 ```sql
 WITH global_all_weeks AS (
@@ -86,7 +86,7 @@ LIMIT 10;
 
 How do different seasons of a show perform in terms of weekly rank and cumulative weeks in the top 10?
 
-## Schema Setup
+### Schema Setup
 
 ```sql
 SELECT show_title, season_title, AVG(weekly_rank) AS avg_weekly_rank, SUM(cumulative_weeks_in_top_10) AS total_weeks_in_top_10
@@ -102,7 +102,7 @@ ORDER BY show_title, season_title;
 
 How do the cumulative weeks in the top 10 correlate with the total hours viewed in the first 28 days for the most popular shows?
 
-## Schema Setup
+### Schema Setup
 
 ```sql
 SELECT a.show_title, 
