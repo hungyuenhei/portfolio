@@ -49,7 +49,7 @@ LIMIT 10;
 ### Insight
 2021Q4 reached the highest viewed hours globally among the top10 Netflix shows.
 
-
+<img width="1149" height="243" alt="Image" src="https://github.com/user-attachments/assets/8c5a5699-a077-4da3-b114-e5b47e66aaca" />
 
 
 # Problem 2 Statement
