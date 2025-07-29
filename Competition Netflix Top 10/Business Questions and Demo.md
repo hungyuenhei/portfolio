@@ -12,14 +12,16 @@ WITH cte AS (
     FROM all_weeks_global
 )
     
-SELECT 
+SELECT
 	watching_week,
-    category, 
-    SUM(weekly_hours_viewed) AS total_weekly_hours_viewed
+	category, 
+	SUM(weekly_hours_viewed) AS total_weekly_hours_viewed
 FROM cte
 GROUP BY watching_week, category
 ORDER BY watching_week;
 ```
+
+<img width="1137" height="605" alt="Image" src="https://github.com/user-attachments/assets/79b781ed-9858-4ae1-803f-3ba2b1a2ffaa" />
 
 # Problem 2 Statement
 
