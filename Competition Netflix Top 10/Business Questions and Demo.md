@@ -11,11 +11,23 @@ WITH cte AS (
             EXTRACT(YEAR FROM TO_TIMESTAMP(week, 'YYYY-MM-DD"T"HH24:MI:SS.FF3')),
             'Q',
             EXTRACT(QUARTER FROM TO_TIMESTAMP(week, 'YYYY-MM-DD"T"HH24:MI:SS.FF3'))
-        ) AS quarter, 
+        ) AS quarter,
+	ROW_NUMBER() OVER (PARTITION BY show_title ORDER BY weekly_hours_viewed DESC) as rn,
         *
     FROM all_weeks_global
 )
-    
+
+--- Quarterly Performance in General
+
+SELECT 
+    quarter,
+    SUM(weekly_hours_viewed) AS total_weekly_hours_viewed
+FROM cte
+GROUP BY quarter, category
+ORDER BY total_weekly_hours_viewed DESC;
+
+--- Quarterly Performance by Top10 shows Category
+  
 SELECT 
     quarter,
     category, 
@@ -23,9 +35,23 @@ SELECT
 FROM cte
 GROUP BY quarter, category
 ORDER BY quarter;
+
+--- Which 10 shows have the highest viewed hours among the period with most viewed hours
+
+SELECT show_title, quarter, weekly_hours_viewed
+FROM cte
+WHERE TO_TIMESTAMP(week, 'YYYY-MM-DD"T"HH24:MI:SS.FF3') BETWEEN '2021-10-01' AND '2021-12-31' ##result that 2021Q4 has the most viewed hours from above data code
+	AND rn = 1 
+ORDER BY weekly_hours_viewed DESC
+LIMIT 10;
 ```
 
+### Insight
+2022Q3 reached the highest viewed hours globally among the top10 Netflix shows.
+
 <img width="1142" height="608" alt="Image" src="https://github.com/user-attachments/assets/971d832f-a2d1-441f-8fd3-ca86cfbbc942" />
+
+
 
 # Problem 2 Statement
 
