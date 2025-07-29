@@ -47,9 +47,15 @@ LIMIT 10;
 ```
 
 ### Insight
-2021Q4 reached the highest viewed hours globally among the top10 Netflix shows.
+2021Q4 reached the highest viewed hours globally among the top10 Netflix shows and TV (non-english) obtains the highest watching hours among the 4 categories. 
 
 <img width="1149" height="243" alt="Image" src="https://github.com/user-attachments/assets/8c5a5699-a077-4da3-b114-e5b47e66aaca" />
+
+Among the Category, English TV shows is always the top preference among the netflix audience and the viewed hours is doubled compared with English Film. The practical and creative factors on launching the English TV shows in series over the media industry over decades allows to extend storytelling and audiences connections that encourage certain amount of fans to return and watch the shows.
+
+<img width="942" height="631" alt="Image" src="https://github.com/user-attachments/assets/6289d612-4f4a-4f76-8507-8bc94bf46322" />
+
+<img width="980" height="631" alt="Image" src="https://github.com/user-attachments/assets/68fb5b05-4229-46fc-b1ad-8fcbfa2a3663" />
 
 
 # Problem 2 Statement
