@@ -7,18 +7,22 @@ Demonstrate the total watching hours to the top_10 shows on each category global
 ```sql
 WITH cte AS (
     SELECT
-        TO_CHAR(TO_TIMESTAMP(week, 'YYYY-MM-DD"T"HH24:MI:SS.FF3'),'YYYYMMDD') AS watching_week, 
+        CONCAT(
+            EXTRACT(YEAR FROM TO_TIMESTAMP(week, 'YYYY-MM-DD"T"HH24:MI:SS.FF3')),
+            'Q',
+            EXTRACT(QUARTER FROM TO_TIMESTAMP(week, 'YYYY-MM-DD"T"HH24:MI:SS.FF3'))
+        ) AS quarter, 
         *
     FROM all_weeks_global
 )
     
-SELECT
-	watching_week,
-	category, 
-	SUM(weekly_hours_viewed) AS total_weekly_hours_viewed
+SELECT 
+    quarter,
+    category, 
+    SUM(weekly_hours_viewed) AS total_weekly_hours_viewed
 FROM cte
-GROUP BY watching_week, category
-ORDER BY watching_week;
+GROUP BY quarter, category
+ORDER BY quarter;
 ```
 
 <img width="1137" height="605" alt="Image" src="https://github.com/user-attachments/assets/79b781ed-9858-4ae1-803f-3ba2b1a2ffaa" />
