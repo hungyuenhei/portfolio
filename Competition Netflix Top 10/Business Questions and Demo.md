@@ -46,7 +46,7 @@ ORDER BY weekly_hours_viewed DESC
 LIMIT 10;
 ```
 
-### Insight
+### Insights
 2021Q4 reached the highest viewed hours globally among the top10 Netflix shows and TV (non-english) obtains the highest watching hours among the 4 categories. 
 
 <img width="1149" height="243" alt="Image" src="https://github.com/user-attachments/assets/8c5a5699-a077-4da3-b114-e5b47e66aaca" />
