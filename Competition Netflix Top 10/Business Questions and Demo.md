@@ -36,7 +36,7 @@ FROM cte
 GROUP BY quarter, category
 ORDER BY quarter;
 
---- Which 10 shows have the highest viewed hours among the period with most viewed hours
+--- Which 10 shows have the highest viewed hours among that period (highest viewed hours: 2021Q4)
 
 SELECT show_title, quarter, weekly_hours_viewed
 FROM cte
