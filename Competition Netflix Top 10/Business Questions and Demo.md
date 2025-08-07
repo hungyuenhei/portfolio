@@ -154,3 +154,7 @@ WHERE a.cumulative_weeks_in_top_10 IS NOT NULL
 	AND b.hours_viewed_first_28_days IS NOT NULL
 GROUP BY a.show_title, b.hours_viewed_first_28_days;
 ```
+
+# Recommendation for Netflix
+
+(pending)
