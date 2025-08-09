@@ -36,3 +36,19 @@ ORDER BY
   increase_in_avg_rev_per_unique_product DESC
 LIMIT 10;
 ```
+
+
+### B3 
+
+```sql
+SELECT
+    order_date_local_month,
+    ROUND(AVG(CASE WHEN `total_revenue_from_discounted_products_` > 0 THEN `total_revenue_from_discounted_products_` / `total_no_order` ELSE NULL END),2) AS `avg_revenue_per_discounted_order`,
+    ROUND(AVG(CASE WHEN `total_revenue_from_discounted_products_` = 0 THEN `total_revenue` / `total_no_order` ELSE NULL END),2) AS `avg_revenue_per_non_discounted_order`
+FROM
+    `casestudy-foodpanda.Data.salesperformancedata`
+GROUP BY order_date_local_month
+ORDER BY order_date_local_month;
+```
+
+
