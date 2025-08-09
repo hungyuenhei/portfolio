@@ -1,4 +1,4 @@
-## BQ1
+### BQ1
 
 ```sql
 WITH ChainedData AS(
