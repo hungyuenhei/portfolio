@@ -38,7 +38,7 @@ LIMIT 10;
 ```
 
 
-### B3 
+### BQ3 
 
 ```sql
 SELECT
