@@ -1,4 +1,6 @@
--- BQ1
+## BQ1
+
+```sql
 WITH ChainedData AS(
 SELECT category_name,
     discounted_product,
@@ -33,3 +35,4 @@ WHERE
 ORDER BY
   increase_in_avg_rev_per_unique_product DESC
 LIMIT 10;
+```
