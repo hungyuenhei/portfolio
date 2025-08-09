@@ -52,3 +52,12 @@ ORDER BY order_date_local_month;
 ```
 
 
+```sql
+SELECT order_date_local_month,
+  CASE WHEN discounted_product IS True THEN 'Discounted'ELSE 'Non-discounted'END AS Discounted,
+  SUM(total_no_order) AS TotalOrder
+FROM `casestudy-foodpanda.Data.salesperformancedata`
+GROUP BY order_date_local_month,discounted_product
+ORDER BY order_date_local_month;
+```
+
