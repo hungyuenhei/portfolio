@@ -37,6 +37,17 @@ ORDER BY
 LIMIT 10;
 ```
 
+### BQ2
+
+
+```sql
+SELECT
+    category_name,
+    SUM(total_discounted_product) AS total_discounted_products_sold,
+    ROUND(SUM(CASE WHEN total_discounted_product > 0 THEN total_revenue ELSE 0 END),2) AS total_revenue
+FROM `casestudy-foodpanda.Data.salesperformancedata`
+GROUP BY category_name;
+```
 
 ### BQ3 
 
