@@ -86,15 +86,12 @@ GROUP BY order_date_local_month
 ORDER BY order_date_local_month;
 ```
 
+### Recommendation
+Based on my above analysis, 3 actions can be done by Chain A for improving the effectiveness of applying discount to products while striving for higher ROI.
+
+<img width="1101" height="476" alt="Image" src="https://github.com/user-attachments/assets/388386cd-8f90-47a1-b716-62062020f4d1" />
+
 ### Appendix
 
 ## Product Distribution by month
-```sql
-select order_date_local_month,
-SUM(CASE WHEN `total_revenue_from_discounted_products_` > 0 THEN total_discounted_product ELSE NULL END) AS discounted_product,
-SUM(CASE WHEN `total_revenue_from_discounted_products_` = 0 THEN total_unique_product ELSE NULL END) AS nondiscounted_product
-FROM
-    `casestudy-foodpanda.Data.salesperformancedata`
-GROUP BY order_date_local_month
-ORDER BY order_date_local_month;
-```
+
