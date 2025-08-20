@@ -94,4 +94,16 @@ Based on my above analysis, 3 actions can be done by Chain A for improving the e
 ### Appendix
 
 ## Product Distribution by month
+<img width="426" height="264" alt="Image" src="https://github.com/user-attachments/assets/3ba8c0c0-d5bc-4019-9321-d08d84dffe9e" />
+
+## Total Sales Quantity of Discounted Products by Month
+<img width="1379" height="1356" alt="Image" src="https://github.com/user-attachments/assets/a384a05e-2740-4387-ad54-cc36723bc92d" />
+
+## Categories Discounted Product Distribution (Top & Bottom 10)
+<img width="1072" height="438" alt="Image" src="https://github.com/user-attachments/assets/0e6a53d3-c20d-4580-8d2c-a522c24bf160" />
+
+## Discounted Categories and Orders in Apr 2025
+Support information for BQ3 to explain why Apr 2025 had a higher monthly average revenue per discounted order instead of the non-discounted
+<img width="1627" height="948" alt="Image" src="https://github.com/user-attachments/assets/e4802484-43c3-4a25-9834-2e1ecdc75f33" />
+
 
