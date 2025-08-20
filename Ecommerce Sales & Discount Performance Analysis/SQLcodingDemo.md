@@ -2,6 +2,8 @@
 ## What product categories bring the highest increase in revenue when discounted?
 I would like to identify which categoryies respond best to discounting allowing targeted investment by comparing the category average revenue/product difference between discounted and non-discounted products by using clustered column chart. I extracted the top 10 and bottom 10 categories for analysis.
 
+<img width="1092" height="506" alt="Image" src="https://github.com/user-attachments/assets/45f23e37-79c7-4051-a090-256e3c672002" />
+
 ```sql
 WITH ChainedData AS(
 SELECT category_name,
@@ -45,6 +47,8 @@ LIMIT 10;
 ## What categories need more or less products on discount?
 I would like to explore the relationship of # of discounted category product vs revenue performance to check if current discount are distributed optimally and explore opportunity to enhance the discount effectiveness. Scatter Plot will be used for answering this business question.
 
+<img width="1097" height="465" alt="Image" src="https://github.com/user-attachments/assets/3caa30b0-698c-41c5-a9d0-3c9f87b6c0f4" />
+
 ```sql
 SELECT
     category_name,
@@ -57,6 +61,8 @@ GROUP BY category_name;
 ### BQ3 
 ## Are there months or seasons where discounts generate more incremental revenue?
 Timing is also another essential factor to determine the effectiveness of discount promotion. Therefore, I am trying to understand the sales pattern by time to see if any specific season/month influences the revenue. 
+
+<img width="1087" height="469" alt="Image" src="https://github.com/user-attachments/assets/cae00df2-9868-4333-8631-97c708534d81" />
 
 Finding out which month has the highest orders driven by the discounted orders comparing with the non-discounted. Clustered column chart is used.
 ```sql
