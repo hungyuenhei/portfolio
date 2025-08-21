@@ -1,4 +1,4 @@
-# Problem 1 Statement
+Problem 1 Statement
 
 Demonstrate the total watching hours to the top_10 shows on each category globally.
 
@@ -47,7 +47,7 @@ LIMIT 10;
 ```
 
 ### Insights
-2021Q4 reached the highest viewed hours globally among the top10 Netflix shows and TV (non-english) obtains the highest watching hours among the 4 categories. 
+2021Q4 reached the highest viewed hours globally among the top10 Netflix shows and TV (non-english) obtains the highest watching hours among the 4 categories. The trend can be explained by the launches of a Netflix series called Squid Games. It premiered in late September 2021 and hit numerous records and become one of the most successful drama series in the world.
 
 <img width="1149" height="243" alt="Image" src="https://github.com/user-attachments/assets/8c5a5699-a077-4da3-b114-e5b47e66aaca" />
 
