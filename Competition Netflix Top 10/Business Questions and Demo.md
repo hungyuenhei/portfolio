@@ -72,12 +72,13 @@ SELECT
 		WHEN category LIKE 'Films%' THEN 'FILMS'
 		ELSE 'OTHERS' END AS type,
 	category, 
-	AVG(weekly_rank) AS avg_weekly_rank, 
-	MAX(cumulative_weeks_in_top_10) AS max_weeks_in_top_10,
-	SUM(weekly_hours_viewed) AS total_weekly_hours_viewed
+	SELECT
+    category,
+    SUM(weekly_hours_viewed) AS total_weekly_hours_viewed,
+    SUM(cumulative_weeks_in_top_10) AS total_cumulative_weeks_in_top_10
 FROM all_weeks_global
 GROUP BY category, type
-ORDER BY max_weeks_in_top_10 DESC, avg_weekly_rank ASC;
+ORDER BY total_weekly_hours_viewed DESC;
 ```
 
 # Problem 3 Statement
