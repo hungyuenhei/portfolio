@@ -121,7 +121,9 @@ LIMIT 10;
 
 <img width="1236" height="604" alt="Image" src="https://github.com/user-attachments/assets/f0227763-a53d-4b1f-923e-cf55d75afeac" />
 
+As the data demonstrated above, Squid Game undoubtedly ranked number 1 in the total hours viewed as of its unique theme, the series reflected social phenomenons (like economic inequality and social anxiety and desperation) through childhood games, which resonating with the audiences.
 
+However, total hours viewed did not correlated with the longevity on top chart. While Squid Game has the highest viewing hours, the coloured bar shows a lighter red compared to 'Yo soy Betty, la fea' and 'Café con aroma de mujer'. It implies that the 2 shows stayed longer weeks in the top 10 even they had fewer total hours viewed. 
 
 
 # Problem 4 Statement
