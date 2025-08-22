@@ -123,26 +123,10 @@ LIMIT 10;
 
 As the data demonstrated above, Squid Game undoubtedly ranked number 1 in the total hours viewed as of its unique theme, the series reflected social phenomenons (like economic inequality and social anxiety and desperation) through childhood games, which resonating with the audiences.
 
-However, total hours viewed did not correlated with the longevity on top chart. While Squid Game has the highest viewing hours, the coloured bar shows a lighter red compared to 'Yo soy Betty, la fea' and 'Café con aroma de mujer'. It implies that the 2 shows stayed longer weeks in the top 10 even they had fewer total hours viewed. 
+However, total hours viewed is not a must to be correlated with the longevity on top chart. While Squid Game has the highest viewing hours, the coloured bar shows a lighter red compared to 'Yo soy Betty, la fea' and 'Café con aroma de mujer'. It implies that the 2 shows stayed longer weeks in the top 10 even they had fewer total hours viewed. 
 
 
 # Problem 4 Statement
-
-How do different seasons of a show perform in terms of weekly rank and cumulative weeks in the top 10?
-
-### Schema Setup
-
-```sql
-SELECT show_title, season_title, AVG(weekly_rank) AS avg_weekly_rank, SUM(cumulative_weeks_in_top_10) AS total_weeks_in_top_10
-FROM all_weeks_global
-WHERE season_title NOT LIKE 'N/A'
-GROUP BY show_title, season_title
-ORDER BY show_title, season_title;
-
-##limitation: as only the top 10 shows in 2021-2024 listed in dataset, shows series released ouside the time period are mostly not be included (low exposure and no promotion)
-```
-
-# Problem 5 Statement
 
 How do the cumulative weeks in the top 10 correlate with the total hours viewed in the first 28 days for the most popular shows?
 
@@ -153,12 +137,18 @@ SELECT a.show_title,
 	MAX(a.cumulative_weeks_in_top_10) AS cumulative_weeks_in_top_10,
 	b.hours_viewed_first_28_days
 FROM all_weeks_global AS a
-JOIN most_popular AS b 
+INNER JOIN most_popular AS b 
 	ON a.show_title = b.show_title
 WHERE a.cumulative_weeks_in_top_10 IS NOT NULL 
 	AND b.hours_viewed_first_28_days IS NOT NULL
 GROUP BY a.show_title, b.hours_viewed_first_28_days;
 ```
+
+# Insights
+
+<img width="871" height="609" alt="Image" src="https://github.com/user-attachments/assets/e21a7f50-e15a-4558-b7a4-b11487702ac6" />
+
+From last business question, the data tells us that hours viewed of the show is not 
 
 # Recommendation for Netflix
 
