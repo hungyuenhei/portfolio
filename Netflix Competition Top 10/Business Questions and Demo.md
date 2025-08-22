@@ -71,32 +71,26 @@ SELECT
 	CASE WHEN category LIKE 'TV%' THEN 'TV'
 		WHEN category LIKE 'Films%' THEN 'FILMS'
 		ELSE 'OTHERS' END AS type,
-	category, 
-	SELECT
     category,
     SUM(weekly_hours_viewed) AS total_weekly_hours_viewed,
-    SUM(cumulative_weeks_in_top_10) AS total_cumulative_weeks_in_top_10
+    AVG(cumulative_weeks_in_top_10) AS total_cumulative_weeks_in_top_10
 FROM all_weeks_global
 GROUP BY category, type
 ORDER BY total_weekly_hours_viewed DESC;
 ```
 
+### Insights
+
+<img width="930" height="619" alt="Image" src="https://github.com/user-attachments/assets/95f9f5bb-a755-41fd-8343-5bf9ac47115c" />
+
+Both English and Non-English TV shows had a significantly higher total watched hours and longer average cumulative weeks in top 10 compared to the films counterpart, which indicated that TV series has greater viewership and sustained popularity.
+
+While English TV Top 10 shows content was held the highest hours viewed among all categories, the Non-English TV shows content outstood and stayed on top 10 for 5 weeks on average, meaning that it had a more enduring presence to the audiences.
+
+The viewed hours of English vs. Non-English films was doubled and it was a bigger gap compared with the average culmulative weeks in top 10 chart. The suggested that English films had a high viewership peak yet did not necessarily have the same long-term chart staying power.
+
+
 # Problem 3 Statement
-
-What are the total viewed hours of the Top 10 shows on Netflix globally from 2021-2024?
-
-### Schema Setup
-
-```sql
-SELECT
-	show_title, 
-	SUM(weekly_hours_viewed) AS total_hours_viewed
-FROM all_weeks_global
-GROUP BY show_title
-ORDER BY total_hours_viewed DESC
-LIMIT 10;
-```
-# Problem 4 Statement
 
 Which 10 Shows are most popular on Netflix of All Time?
 
@@ -108,6 +102,7 @@ WITH global_all_weeks AS (
 	*
 	FROM all_weeks_global
 )
+
 SELECT
 	RANK() OVER(ORDER BY COUNT(*) DESC) AS rank,
 	show_title, 
@@ -122,7 +117,14 @@ ORDER BY total_weeks_in_top_10 DESC
 LIMIT 10;
 ```
 
-# Problem 5 Statement
+### Insights
+
+<img width="1236" height="604" alt="Image" src="https://github.com/user-attachments/assets/f0227763-a53d-4b1f-923e-cf55d75afeac" />
+
+
+
+
+# Problem 4 Statement
 
 How do different seasons of a show perform in terms of weekly rank and cumulative weeks in the top 10?
 
@@ -138,7 +140,7 @@ ORDER BY show_title, season_title;
 ##limitation: as only the top 10 shows in 2021-2024 listed in dataset, shows series released ouside the time period are mostly not be included (low exposure and no promotion)
 ```
 
-# Problem 6 Statement
+# Problem 5 Statement
 
 How do the cumulative weeks in the top 10 correlate with the total hours viewed in the first 28 days for the most popular shows?
 
