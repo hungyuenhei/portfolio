@@ -102,11 +102,12 @@ WITH global_all_weeks AS (
 
 SELECT
 	RANK() OVER(ORDER BY COUNT(*) DESC) AS rank,
-	show_title, 
-	season_title, 
+	CASE 
+		WHEN season_title = 'N/A' THEN show_title
+		ELSE season_title
+		END AS show_title,
 	SUM(weekly_hours_viewed) AS total_weekly_hours_viewed,
 	TO_CHAR(MIN(time), 'YYYYMM') AS first_record_month,
-	MIN(weekly_rank) AS first_record_ranking,
 	COUNT(*) AS total_weeks_in_top_10
 FROM global_all_weeks
 GROUP BY show_title, season_title
