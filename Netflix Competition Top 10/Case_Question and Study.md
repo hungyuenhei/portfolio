@@ -67,10 +67,7 @@ In general, how Netflix content performed (by category) globally?
 ### Schema Setup
 
 ```sql
-SELECT 
-	CASE WHEN category LIKE 'TV%' THEN 'TV'
-		WHEN category LIKE 'Films%' THEN 'FILMS'
-		ELSE 'OTHERS' END AS type,
+SELECT
     category,
     SUM(weekly_hours_viewed) AS total_weekly_hours_viewed,
     AVG(cumulative_weeks_in_top_10) AS total_cumulative_weeks_in_top_10
