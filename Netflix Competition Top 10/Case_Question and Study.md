@@ -139,6 +139,7 @@ SELECT a.show_title,
 FROM all_weeks_global AS a
 INNER JOIN most_popular AS b 
 	ON a.show_title = b.show_title
+--- only most_popular.csv include data of viewed hours in first 28 days, and show title is the only matching column in both tables
 WHERE a.cumulative_weeks_in_top_10 IS NOT NULL 
 	AND b.hours_viewed_first_28_days IS NOT NULL
 GROUP BY a.show_title, b.hours_viewed_first_28_days;
