@@ -1,4 +1,4 @@
-Problem 1 Statement
+# Problem 1 Statement
 
 Demonstrate the total watching hours to the top_10 shows on each category globally.
 
@@ -92,7 +92,7 @@ The viewed hours of English vs. Non-English films was doubled and it was a bigge
 
 # Problem 3 Statement
 
-Which 10 Shows are most popular on Netflix of All Time?
+Which 10 Shows are most popular on Netflix of all time?
 
 ### Schema Setup
 
@@ -128,7 +128,9 @@ However, total hours viewed is not a must to be correlated with the longevity on
 
 # Problem 4 Statement
 
-How do the cumulative weeks in the top 10 correlate with the total hours viewed in the first 28 days for the most popular shows?
+How do the cumulative weeks in the top 10 correlate with the total hours viewed in the first 28 days for the most popular TV shows?
+
+Note: Only TV shows category can be analyzed due to no data record provided for other categories.
 
 ### Schema Setup
 
@@ -148,7 +150,9 @@ GROUP BY a.show_title, b.hours_viewed_first_28_days;
 
 <img width="871" height="609" alt="Image" src="https://github.com/user-attachments/assets/e21a7f50-e15a-4558-b7a4-b11487702ac6" />
 
-From last business question, the data tells us that hours viewed of the show is not 
+In the dataset, 34 sample shows selected and resulted that there is moderate relationship between cumulative weeks in top 10 vs hours viewed in first 28 days. For example, Wednesday, a famous comedy horror series, had more than 700 million viewed hours on first 28 days, however the series stayed on chart only for 2 weeks. On the other hand, Café con aroma de mujer (2021 version, new adaption to same series first broadcasted in 1994), a Spanish romance series, had comparatively lower audience engagement yet entered top 10 chart for 28 weeks consecutively. 
+
+The above result incidated that other factors influenced to let the shows stick in top ranking. For Wednesday, it's well-known and has built a huge fan communities around the globe, curiosity and emotional connections can be created in a short period of time. However, Non-english TV show like Café con aroma de mujer, even language barrier limit amount of viewers due to audiences access restriction and misunderstanding to plot, canonical story with high-quality reproduction and attractive casting can catch eyes from local audiences. TV series can hit the top ranking and stay for an extended period.
 
 # Recommendation for Netflix
 
