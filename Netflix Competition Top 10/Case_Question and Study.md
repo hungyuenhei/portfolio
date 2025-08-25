@@ -47,9 +47,11 @@ LIMIT 10;
 ```
 
 ### Insights
-2021Q4 reached the highest viewed hours globally among the top10 Netflix shows and TV (non-english) obtains the highest watching hours among the 4 categories. The trend can be explained by the launches of a Netflix series called Squid Games. It premiered in late September 2021 and hit numerous records and become one of the most successful drama series in the world.
+2021Q4 reached the highest viewed hours globally among the top10 Netflix shows and TV (non-english) obtains the highest watching hours among the 4 categories. The trend can be explained by the launches of a Netflix series called Squid Game. It premiered in late September 2021 and hit numerous records and become one of the most successful k-drama series in the world. To highlight, My Name (ranked in 10th) also is thriller action korean content. 
 
 <img width="1149" height="243" alt="Image" src="https://github.com/user-attachments/assets/8c5a5699-a077-4da3-b114-e5b47e66aaca" />
+
+<img width="896" height="317" alt="Image" src="https://github.com/user-attachments/assets/2ea852bc-bf72-4331-9f24-0cb82e4c2919" />
 
 Among the Category, English TV shows is always the top preference among the netflix audience and the viewed hours is doubled compared with English Film. The practical and creative factors on launching the English TV shows in series over the media industry over decades allows to extend storytelling and audiences connections that encourage certain amount of fans to return and watch the shows.
 
@@ -154,5 +156,6 @@ In the dataset, 34 sample shows selected and resulted that there is moderate rel
 The above result incidated that other factors influenced to let the shows stick in top ranking. For Wednesday, it's well-known and has built a huge fan communities around the globe, curiosity and emotional connections can be created in a short period of time. However, Non-english TV show like Café con aroma de mujer, even language barrier limit amount of viewers due to audiences access restriction and misunderstanding to plot, canonical story with high-quality reproduction and attractive casting can catch eyes from local audiences. TV series can hit the top ranking and stay for an extended period.
 
 # Recommendation for Netflix
+The massive success of non-English content like Squid Game demonstrates the potential to dominate the global market. Also, Spanish drama Café con aroma de mujer illustrates high-quality re-production of classical series can attract audience and have a longer staying power on top 10 chart copmared with the English titles. Netflix should prioritize investing in compelling and brand-new non-English content to capitalize on this growing trend.
 
-(pending)
+Although some shows had a lower viewership hours, like 'Yo soy Betty, la fea', they stayed on top 10 charts for significant number of weeks. This 'long-tail' content represents a valuable asset for audience retention. To endure show's presence to both new and existing viewers, implementing robust and localized themed events are needed for viewers engagement and subscriber value. 
