@@ -1,5 +1,5 @@
 # Introduction
-This folder contains the business analysis towards a scale model car company in the US from 2003-2005. And here are some questions I would like to explore by using SQL throughtout this project.
+This folder contains the business analysis towards a scale model vehicle company in the US from 2003-2005. And here are some questions I would like to explore by using SQL throughtout this project.
 
 # Business Questions
 | types     | Question                                                                            |
