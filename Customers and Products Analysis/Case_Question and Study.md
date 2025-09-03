@@ -27,3 +27,7 @@ SELECT productName, productLine
 FROM product
 WHERE productCode IN (SELECT productCode FROM ProductPerformance);
 ```
+
+<img width="890" height="463" alt="Image" src="https://github.com/user-attachments/assets/0436b9d8-7701-4b7d-b082-baebbe8def4c" />
+
+The above products have a comparatively high stock pressure ratio, which implies that the demand is larger than current supply of the company, while 1968 Ford Mustang, 1911 Ford Town Car and 1928 Mercedes-Benz SSK have the highest ratio. Vintage cars and motocycles are top priority to restock. They sell frequently with great sales performances.
