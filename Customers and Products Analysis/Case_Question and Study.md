@@ -23,9 +23,12 @@ ProductPerformance AS(
 	LIMIT 10
 )
 
-SELECT productName, productLine
+SELECT productName, productLine, low_stock_table.stockpressure_ratio
 FROM product
-WHERE productCode IN (SELECT productCode FROM ProductPerformance);
+INNER JOIN ProductPerformance
+ON products.productCode = ProductPerformance.productCode
+INNER JOIN low_stock_table
+ON products.productCode = low_stock_table.productCode;
 ```
 
 <img width="890" height="463" alt="Image" src="https://github.com/user-attachments/assets/0436b9d8-7701-4b7d-b082-baebbe8def4c" />
