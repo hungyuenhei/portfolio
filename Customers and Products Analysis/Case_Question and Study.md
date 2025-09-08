@@ -37,8 +37,7 @@ The above products have a comparatively high stock pressure ratio（>1) , which 
 
 
 ### BQ2 How should we tailor marketing and communication strategies to customer behaviors? 
-To understand the 
-We can also separate it into 2 divisions: by Country and by individual customers for the analysis.
+By analysing customer purchase influence, we can understand the customer loyalty and profit bring to the company. In this practice, I am going to analyse the profit performance by country and categorize customers (VIP and less-enegaged) for specializing the marketing and communication campaigns to retain, as well as attract new customers.
 
 ```sql
 WITH customerinfo AS(
