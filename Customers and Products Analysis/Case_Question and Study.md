@@ -37,3 +37,33 @@ The above products have a comparatively high stock pressure ratio（>1) , which 
 
 
 ### BQ2 How should we tailor marketing and communication strategies to customer behaviors? 
+To understand the 
+We can also separate it into 2 divisions: by Country and by individual customers for the analysis.
+
+```sql
+WITH customerinfo AS(
+  SELECT customerNumber,contactLastName,contactFirstName,city,country
+  FROM customers
+)
+
+SELECT
+  contactLastName, contactFirstName, country,
+  COUNT(DISTINCT o.orderNumber) AS numberOfOrders,
+  ROUND(SUM(od.quantityOrdered * (od.priceEach - p.buyPrice)),2) AS profit
+FROM products AS p
+INNER JOIN
+  orderdetails AS od
+  ON od.productCode = p.productCode
+INNER JOIN 
+  orders AS o
+  ON o.orderNumber = od.orderNumber
+INNER JOIN
+  customerinfo AS ci
+  ON o.customerNumber = ci.customerNumber
+GROUP BY
+  ci.contactLastName, 
+  ci.contactFirstName,
+  ci.country
+ORDER BY 
+  profit DESC;
+```
