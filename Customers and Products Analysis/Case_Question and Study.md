@@ -66,3 +66,6 @@ GROUP BY
 ORDER BY 
   profit DESC;
 ```
+<img width="869" height="537" alt="Image" src="https://github.com/user-attachments/assets/5341a665-234c-4190-8443-24f01661e9ca" />
+
+From above table, majority of the profit is driven by the US customers, followed by Spain, France, Australia and New Zealand. 
