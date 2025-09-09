@@ -1,4 +1,4 @@
-### BQ1 Which product should order more or less?
+# BQ1 Which product should order more or less?
 To optimze the supply and prevent out-of-stock for best-selling products, related product stock pressure and sales performance will be examinated. Product out-of-stock means high value in stock pressure (quantity of product ordered divided by quantity of product in stock). After selecting the top items with high stock pressure, review performance to check the values can be broguht from the product, and then prioritize those products for restocking.
 
 ```sql
@@ -36,7 +36,7 @@ ON products.productCode = low_stock_table.productCode;
 The above products have a comparatively high stock pressure ratio（>1) , which implies that current product demand is larger than its supply, while 1968 Ford Mustang, 1911 Ford Town Car and 1928 Mercedes-Benz SSK have the highest ratio. Vintage cars and motocycles are top priority to restock. They sell frequently with great sales performances.
 
 
-### BQ2 How should we tailor marketing and communication strategies to customer behaviors? 
+# BQ2 How should we tailor marketing and communication strategies to customer behaviors? 
 By analysing customer purchase influence, we can understand the customer loyalty and profit bring to the company. In this practice, I am going to analyse the profit performance by country and categorize customers (VIP and less-enegaged) for specializing the marketing and communication campaigns to retain, as well as attract new customers.
 
 ```sql
@@ -70,5 +70,8 @@ ORDER BY
 
 From above table, majority of the profit is driven by the local US customers, followed by Spain and France. Oceania countries also performed well and contributed relatively high profits compared with some European and Asian countries. This can be explained by the origin of the company (local reputation and market influence) and the customer interests and preference on the classic and vintage motors. Besides, shipping costs were much higher for oversea shipping leading to the decrease in profit. 
 
+### Top VIP Customers
 <img width="551" height="97" alt="Image" src="https://github.com/user-attachments/assets/9c4709c1-7b58-4eb3-ae49-3f5a0cf8c205" />
 
+### Less-engaged Customers
+<img width="551" height="97" alt="Image" src="https://github.com/user-attachments/assets/f883df92-58b6-401b-a1fa-4bcfae3b0d1a" />
