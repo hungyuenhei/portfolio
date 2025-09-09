@@ -70,4 +70,5 @@ ORDER BY
 
 From above table, majority of the profit is driven by the local US customers, followed by Spain and France. Oceania countries also performed well and contributed relatively high profits compared with some European and Asian countries. This can be explained by the origin of the company (local reputation and market influence) and the customer interests and preference on the classic and vintage motors. Besides, shipping costs were much higher for oversea shipping leading to the decrease in profit. 
 
+<img width="551" height="97" alt="Image" src="https://github.com/user-attachments/assets/9c4709c1-7b58-4eb3-ae49-3f5a0cf8c205" />
 
