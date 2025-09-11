@@ -68,10 +68,18 @@ ORDER BY
 ```
 <img width="869" height="537" alt="Image" src="https://github.com/user-attachments/assets/5341a665-234c-4190-8443-24f01661e9ca" />
 
-From above table, majority of the profit is driven by the local US customers, followed by Spain and France. Oceania countries also performed well and contributed relatively high profits compared with some European and Asian countries. This can be explained by the origin of the company (local reputation and market influence) and the customer interests and preference on the classic and vintage motors. Besides, shipping costs were much higher for oversea shipping leading to the decrease in profit. 
+From above table, majority of the profit is driven by the local US customers, followed by Spain and France. Oceania countries also performed well and contributed relatively high profits compared with some European and Asian countries. This is likely due to the origin of the company, which influence its the local reputation and market presence. The US customer interests in classic and vintage motors might also play a role. 
+
+For those high-contributing profit countries, the company can leverage company's local reputation with campaigns and highlight local heritage, like holding showcase or even vintage-style motor brand pop-up to expose in public and offer unique experience to attendees in order to stimulate potential sales. For Spain and France, tailor advertisements presenting the elegance and artistry of the products.
+
+Although countries from Oceania contributed quite a number of protfit, shipping costs are inescapable and challenging for overseas orders and can reduce the profit. Company can collaborate with local distributors which cater to luxury and classic products, ensuring secure delivery experience. Offering shipping discounts with minimum purchase amount/quantity encourage larger purchases.
 
 ### Top VIP Customers
 <img width="551" height="97" alt="Image" src="https://github.com/user-attachments/assets/9c4709c1-7b58-4eb3-ae49-3f5a0cf8c205" />
 
+VIP system can be set up for premium customers, by offering invitations to exclusive events like private showing of newly acquired vintage cars and curated tour to car collection. The personalized approach can make customers feel valued and exclusive.
+
 ### Less-engaged Customers
 <img width="551" height="97" alt="Image" src="https://github.com/user-attachments/assets/f883df92-58b6-401b-a1fa-4bcfae3b0d1a" />
+
+In luxury market, less-engaged customers are not the necessarily lost cause. Instead of providing price promotion, communication should be tailored by personal interests, like sharing recent development of specfic model/brand, or gathering with other customers who also interested on the items to reignite their passion.
