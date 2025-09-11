@@ -149,4 +149,8 @@ FROM
 ORDER BY year_month;
 
 ```
+<img width="489" height="353" alt="Image" src="https://github.com/user-attachments/assets/6ead34fd-6122-48ed-b833-adf7d6453e1f" />
 
+From above data, the number of clients keep decling since 2003, and had the lowest new customers and sales generated in 2004. In year 2005, data is present in dataset but yet no record found, which implies that no new customers since September 2004. It is essential for the company to spend money acquiring new customers.
+
+To Calculate how much money can be spent for new customer marketing campaigns, we can compute customer lifetime value to find average amount of money customer generates and predict future profits. 
