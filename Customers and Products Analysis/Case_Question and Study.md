@@ -83,3 +83,7 @@ VIP system can be set up for premium customers, by offering invitations to exclu
 <img width="551" height="97" alt="Image" src="https://github.com/user-attachments/assets/f883df92-58b6-401b-a1fa-4bcfae3b0d1a" />
 
 In luxury market, less-engaged customers are not the necessarily lost cause. Instead of providing price promotion, communication should be tailored by personal interests, like sharing recent development of specfic model/brand, or gathering with other customers who also interested on the items to reignite their passion.
+
+
+# BQ3 How much can we spend on acquiring new customers?
+Extend to previous question, we have 
