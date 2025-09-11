@@ -86,4 +86,4 @@ In luxury market, less-engaged customers are not the necessarily lost cause. Ins
 
 
 # BQ3 How much can we spend on acquiring new customers?
-Extend to previous question, we have 
+Extend to previous question, we have reviewed existing customers. Meanwhile maintaining customer relationship with current customers, obtaining new customers can stimulate purchase sales. Before planning new strategy for new customer acquisition, we have to check if it is worth spending on new customer acquisition and examine whether how much can be spent for better costing control on marketing.
