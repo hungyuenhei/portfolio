@@ -149,9 +149,10 @@ FROM
 ORDER BY year_month;
 
 ```
-<img width="489" height="353" alt="Image" src="https://github.com/user-attachments/assets/6ead34fd-6122-48ed-b833-adf7d6453e1f" />
 
 <img width="3015" height="1870" alt="Image" src="https://github.com/user-attachments/assets/3783a933-74b2-44d2-8281-023beda3706b" />
+
+<img width="489" height="353" alt="Image" src="https://github.com/user-attachments/assets/6ead34fd-6122-48ed-b833-adf7d6453e1f" />
 
 From above data, the number of clients keep decling since 2003, and had the lowest new customers and sales generated in 2004. In year 2005, data is present in dataset but yet no record found, which implies that no new customers since September 2004. It is essential for the company to spend money acquiring new customers.
 
