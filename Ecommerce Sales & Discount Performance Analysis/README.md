@@ -6,12 +6,8 @@ Chain A is a local supermarket, where expanding its business via online. By revi
 
 ## Business Questions
 |   | Business Question                                                                 |
-|---|:---------------------------------------------------------------------------------:|
+|---|-----------------------------------------------------------------------------------|
 | 1 |What product categories bring the highest increase in revenue when discounted?     |
 | 2 |What categories need more or less products on discount?                            |
 | 3 |Are there months or seasons where discounts generate more incremental revenue?     |
-
-
-
-
 
