@@ -1,6 +1,4 @@
-### BQ1
-## What product categories bring the highest increase in revenue when discounted?
-I would like to identify which categoryies respond best to discounting allowing targeted investment by comparing the category average revenue/product difference between discounted and non-discounted products by using clustered column chart. I extracted the top 10 and bottom 10 categories for analysis.
+# BQ1 What product categories bring the highest increase in revenue when discounted?
 
 <img width="1092" height="506" alt="Image" src="https://github.com/user-attachments/assets/45f23e37-79c7-4051-a090-256e3c672002" />
 
@@ -43,8 +41,7 @@ ORDER BY
 LIMIT 10;
 ```
 
-### BQ2
-## What categories need more or less products on discount?
+# BQ2 What categories need more or less products on discount?
 I would like to explore the relationship of # of discounted category product vs revenue performance to check if current discount are distributed optimally and explore opportunity to enhance the discount effectiveness. Scatter Plot will be used for answering this business question.
 
 <img width="1097" height="465" alt="Image" src="https://github.com/user-attachments/assets/3caa30b0-698c-41c5-a9d0-3c9f87b6c0f4" />
@@ -58,8 +55,7 @@ FROM `casestudy-foodpanda.Data.salesperformancedata`
 GROUP BY category_name;
 ```
 
-### BQ3 
-## Are there months or seasons where discounts generate more incremental revenue?
+# BQ3 Are there months or seasons where discounts generate more incremental revenue?
 Timing is also another essential factor to determine the effectiveness of discount promotion. Therefore, I am trying to understand the sales pattern by time to see if any specific season/month influences the revenue. 
 
 <img width="1087" height="469" alt="Image" src="https://github.com/user-attachments/assets/cae00df2-9868-4333-8631-97c708534d81" />
@@ -86,23 +82,23 @@ GROUP BY order_date_local_month
 ORDER BY order_date_local_month;
 ```
 
-### Recommendation
+# Recommendation
 Based on my above analysis, 3 actions can be done by Chain A for improving the effectiveness of applying discount to products while striving for higher ROI.
 
 <img width="1101" height="476" alt="Image" src="https://github.com/user-attachments/assets/388386cd-8f90-47a1-b716-62062020f4d1" />
 
-### Appendix
+# Appendix
 
-## Product Distribution by month
+### Product Distribution by month
 <img width="426" height="264" alt="Image" src="https://github.com/user-attachments/assets/3ba8c0c0-d5bc-4019-9321-d08d84dffe9e" />
 
-## Total Sales Quantity of Discounted Products by Month
+### Total Sales Quantity of Discounted Products by Month
 <img width="466" height="433" alt="Image" src="https://github.com/user-attachments/assets/b85f9ed2-b172-495e-8a13-2c2f844a4aa7" />
 
-## Categories Discounted Product Distribution (Top & Bottom 10)
+### Categories Discounted Product Distribution (Top & Bottom 10)
 <img width="1072" height="438" alt="Image" src="https://github.com/user-attachments/assets/0e6a53d3-c20d-4580-8d2c-a522c24bf160" />
 
-## Discounted Categories and Orders in Apr 2025
+### Discounted Categories and Orders in Apr 2025
 Support information for BQ3 to explain why Apr 2025 had a higher monthly average revenue per discounted order instead of the non-discounted.
 
 <img width="579" height="343" alt="Image" src="https://github.com/user-attachments/assets/d37d129b-db05-48da-898c-8dd3afe71216" />
