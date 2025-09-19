@@ -4,8 +4,9 @@ Netflix is one of the most popular streaming platforms that offers various types
 In this study, I used SQL to process the data while using tableau for data visualization.
 
 ## Business Questions
-|   | Business Question                                                                 |
-|---|-----------------------------------------------------------------------------------|
-| 1 |What product categories bring the highest increase in revenue when discounted?     |
-| 2 |What categories need more or less products on discount?                            |
-| 3 |Are there months or seasons where discounts generate more incremental revenue?     |
+|   | Business Question                                                                                                                     |
+|---|---------------------------------------------------------------------------------------------------------------------------------------|
+| 1 |Demonstrate the total watching hours to the top_10 shows on each category globally.                                                    |
+| 2 |In general, how Netflix content performed (by category) globally?                                                                      |
+| 3 |Which 10 Shows are most popular on Netflix of all time?                                                                                |
+| 4 |How do the cumulative weeks in the top 10 correlate with the total hours viewed in the first 28 days for the most popular TV shows?    |
