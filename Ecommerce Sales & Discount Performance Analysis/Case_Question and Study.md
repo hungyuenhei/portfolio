@@ -6,7 +6,7 @@
 WITH ChainedData AS(
 SELECT category_name,
     discounted_product,
-    SUM(total_revenue),2 AS total_revenue,
+    SUM(total_revenue) AS total_revenue,
     SUM(total_unique_product) AS total_unique_product
 FROM `casestudy-foodpanda.Data.salesperformancedata`
 WHERE chain_name = 'A'
